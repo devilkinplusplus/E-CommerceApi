@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Infrastructure.deps.json
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Infrastructure.dll
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Infrastructure.pdb
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Application.dll
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Domain.dll
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Application.pdb
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\bin\Debug\net7.0\ShopApi.Domain.pdb
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.AssemblyInfo.cs
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.csproj.CopyComplete
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.dll
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\refint\ShopApi.Infrastructure.dll
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ShopApi.Infrastructure.pdb
+C:\Users\user\source\repos\ShopApi\Infrastructure\ShopApi.Infrastructure\obj\Debug\net7.0\ref\ShopApi.Infrastructure.dll

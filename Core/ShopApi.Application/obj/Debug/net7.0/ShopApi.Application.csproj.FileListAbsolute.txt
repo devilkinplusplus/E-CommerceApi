@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\bin\Debug\net7.0\ShopApi.Application.deps.json
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\bin\Debug\net7.0\ShopApi.Application.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\bin\Debug\net7.0\ShopApi.Application.pdb
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\bin\Debug\net7.0\ShopApi.Domain.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\bin\Debug\net7.0\ShopApi.Domain.pdb
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.AssemblyInfo.cs
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.csproj.CopyComplete
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\refint\ShopApi.Application.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ShopApi.Application.pdb
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Application\obj\Debug\net7.0\ref\ShopApi.Application.dll

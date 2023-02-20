@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\bin\Debug\net7.0\ShopApi.Domain.deps.json
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\bin\Debug\net7.0\ShopApi.Domain.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\bin\Debug\net7.0\ShopApi.Domain.pdb
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.AssemblyInfo.cs
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\refint\ShopApi.Domain.dll
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.pdb
+C:\Users\user\source\repos\ShopApi\Core\ShopApi.Domain\obj\Debug\net7.0\ref\ShopApi.Domain.dll
