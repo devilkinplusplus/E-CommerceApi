@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using ShopApi.Application.Abstractions.Services;
 using ShopApi.Application.AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace ShopApi.Application
         public static void AddAplicationServices(this IServiceCollection services)
         {
             services.AddMediatR(typeof(ServiceRegistration));
+
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new MappingProfile());

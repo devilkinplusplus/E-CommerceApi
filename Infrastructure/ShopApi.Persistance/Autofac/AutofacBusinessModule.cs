@@ -1,5 +1,7 @@
 ﻿using Autofac;
+using Microsoft.IdentityModel.Tokens;
 using ShopApi.Application.Abstractions.Services;
+using ShopApi.Application.Abstractions.Services.Tokens;
 using ShopApi.Persistance.Services;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,7 @@ namespace ShopApi.Persistance.Autofac
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<UserService>().As<IUserService>();
+            builder.RegisterType<AuthService>().As<IAuthService>();
         }
     }
 }

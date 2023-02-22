@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ShopApi.Application.DTOs.AuthDTO;
 using static ShopApi.Application.DTOs.UserDTO;
 
 namespace ShopApi.Application.AutoMapper
@@ -14,6 +15,7 @@ namespace ShopApi.Application.AutoMapper
         public MappingProfile()
         {
             CreateMap<CreateUserDTO, AppUser>().ReverseMap();
+            CreateMap<LoginDTO,AppUser>().ReverseMap();
         }
     }
 }

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using ShopApi.Persistance.Context;
 using ShopApi.Domain.Entities.Identity;
 using Microsoft.IdentityModel.Protocols;
+using ShopApi.Application.Abstractions.Services;
+using ShopApi.Persistance.Services;
 
 namespace ShopApi.Persistance
 {
@@ -27,8 +29,16 @@ namespace ShopApi.Persistance
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireNonAlphanumeric = false;
-            }).AddEntityFrameworkStores<AppDbContext>();
+            }).AddEntityFrameworkStores<AppDbContext>().AddSignInManager<SignInManager<AppUser>>();
 
+
+            services.AddAuthentication("Identity.Application")
+                .AddCookie("Identity.Application", options =>
+                {
+                    options.LoginPath = "/Account/Login";
+                    options.LogoutPath = "/Account/Logout";
+                    options.AccessDeniedPath = "/Account/AccessDenied";
+                });
         }
     }
 }
