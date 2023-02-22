@@ -17,6 +17,7 @@ namespace ShopApi.Persistance.Autofac
         {
             builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<AuthService>().As<IAuthService>();
+            builder.RegisterType<RoleService>().As<IRoleService>();
         }
     }
 }

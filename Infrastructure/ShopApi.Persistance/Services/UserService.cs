@@ -56,7 +56,8 @@ namespace ShopApi.Persistance.Services
 
                 if (result.Succeeded)
                 {
-                    return new CreateUserResponse { Succeeded = true };
+                    AppUser newUser = await _userManager.FindByEmailAsync(user.Email);
+                    return new CreateUserResponse { Succeeded = true,User = newUser };
                 }
                 foreach (var error in result.Errors)
                 {
