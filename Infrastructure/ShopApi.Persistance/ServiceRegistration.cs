@@ -11,6 +11,7 @@ using ShopApi.Domain.Entities.Identity;
 using Microsoft.IdentityModel.Protocols;
 using ShopApi.Application.Abstractions.Services;
 using ShopApi.Persistance.Services;
+using Microsoft.Extensions.Options;
 
 namespace ShopApi.Persistance
 {
@@ -23,22 +24,16 @@ namespace ShopApi.Persistance
                 option.UseSqlServer(Configuration.ConnectionString);
             });
 
-            services.AddIdentityCore<AppUser>(options =>
+            services.AddIdentity<AppUser, IdentityRole>(config =>
             {
-                options.Password.RequireDigit = false;
-                options.Password.RequireLowercase = false;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireNonAlphanumeric = false;
-            }).AddEntityFrameworkStores<AppDbContext>().AddSignInManager<SignInManager<AppUser>>();
+                config.Password.RequireDigit = false;
+                config.Password.RequireLowercase = false;
+                config.Password.RequireUppercase = false;
+                config.Password.RequireNonAlphanumeric = false;
+            }).AddEntityFrameworkStores<AppDbContext>();
+           
 
 
-            services.AddAuthentication("Identity.Application")
-                .AddCookie("Identity.Application", options =>
-                {
-                    options.LoginPath = "/Account/Login";
-                    options.LogoutPath = "/Account/Logout";
-                    options.AccessDeniedPath = "/Account/AccessDenied";
-                });
         }
     }
 }

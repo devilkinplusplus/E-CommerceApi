@@ -13,10 +13,11 @@ namespace ShopApi.Application.Features.Commands.User.CreateUser
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommandRequest, CreateUserCommandResponse>
     {
         private readonly IUserService _userService;
-
-        public CreateUserCommandHandler(IUserService userService)
+        private readonly IRoleService _roleService;
+        public CreateUserCommandHandler(IUserService userService, IRoleService roleService)
         {
             _userService = userService;
+            _roleService = roleService;
         }
 
         public async Task<CreateUserCommandResponse> Handle(CreateUserCommandRequest request, CancellationToken cancellationToken)
@@ -24,6 +25,7 @@ namespace ShopApi.Application.Features.Commands.User.CreateUser
             CreateUserResponse response = await _userService.CreateUserAsync(request.CreateUserModel);
             if (response.Succeeded)
             {
+                await _roleService.AssignRoleToUser(response.User.Id, "User");   
                 return new() { Succeeded = true };
             }
             return new() { Succeeded = false, Errors = response.Errors };
