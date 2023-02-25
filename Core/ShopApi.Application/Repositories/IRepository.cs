@@ -1,4 +1,5 @@
-﻿using ShopApi.Domain.Entities.Common;
+﻿using Microsoft.EntityFrameworkCore;
+using ShopApi.Domain.Entities.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace ShopApi.Application.Repositories
 {
     public interface IRepository<T> where T : BaseEntity
     {
+        DbSet<T> Table { get; }
     }
 }

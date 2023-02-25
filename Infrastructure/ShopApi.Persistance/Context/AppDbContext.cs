@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using ShopApi.Domain.Entities.Concrete;
 using ShopApi.Domain.Entities.Identity;
+using ShopApi.Persistance.Configurations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +19,21 @@ namespace ShopApi.Persistance.Context
         public AppDbContext(DbContextOptions options):base(options)
         {
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Category> Categories{ get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<AppUser>().ToTable("Users");
-            builder.Entity<IdentityRole>().ToTable("Roles");
-            base.OnModelCreating(builder);//this is important!
+            //for all entity configurations
+            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            //spesific configurations
+            builder.ApplyConfiguration(new ProductConfiguration());
+            builder.ApplyConfiguration(new CategoryConfiguration());
+            builder.ApplyConfiguration(new BrandConfiguration());
+
+            base.OnModelCreating(builder);
         }
     }
 }
