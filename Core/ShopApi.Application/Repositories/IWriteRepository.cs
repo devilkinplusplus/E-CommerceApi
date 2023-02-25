@@ -14,7 +14,7 @@ namespace ShopApi.Application.Repositories
         bool Update(T entity);
         bool Remove(T entity);
         Task<bool> RemoveAsync(Guid id);
-        bool RemoveRangeAsync(List<T> entities);
+        bool RemoveRange(List<T> entities);
         Task<int> SaveAsync();
     }
 }
