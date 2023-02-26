@@ -13,8 +13,6 @@ namespace ShopApi.Persistance.Configurations
     {
         public void Configure(EntityTypeBuilder<Brand> builder)
         {
-            builder.HasKey(x => x.Id);
-            builder.Property(x=>x.Id).UseIdentityColumn();
             builder.Property(x=>x.Name).IsRequired().HasMaxLength(256);
             builder.Property(x => x.Logo).IsRequired();
         }

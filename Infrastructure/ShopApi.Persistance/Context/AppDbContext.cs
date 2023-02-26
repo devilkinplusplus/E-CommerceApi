@@ -25,9 +25,6 @@ namespace ShopApi.Persistance.Context
         public DbSet<Category> Categories{ get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //for all entity configurations
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
             //spesific configurations
             builder.ApplyConfiguration(new ProductConfiguration());
             builder.ApplyConfiguration(new CategoryConfiguration());

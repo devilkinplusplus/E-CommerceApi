@@ -46,6 +46,13 @@ namespace ShopApi.Persistance.Services
             return new() { Succeeded = false, Errors = (List<IdentityError>)result.Errors };
         }
 
+        public async Task<bool> EditRoleAsync(string roleId, string roleName)
+        {
+            var role = await _roleManager.FindByIdAsync(roleId);
+            role.Name = roleName;
+            var res = await _roleManager.UpdateAsync(role);
+            return res.Succeeded;
+        }
 
         private async Task<bool> IsRoleNameExist(string roleName)
         {

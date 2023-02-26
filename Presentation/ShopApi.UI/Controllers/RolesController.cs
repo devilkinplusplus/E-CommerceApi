@@ -5,12 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
 using ShopApi.Application.Features.Commands.Role.AssignRole;
 using ShopApi.Application.Features.Commands.Role.CreateRole;
+using ShopApi.Application.Features.Commands.Role.EditRole;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace ShopApi.UI.Controllers
 {
-    [Route("api/[controller]")]
     [Authorize]
+    [Route("api/[controller]")]
     [ApiController]
     public class RolesController : ControllerBase
     {
@@ -38,6 +39,15 @@ namespace ShopApi.UI.Controllers
             var id = jwtSecurityToken.Claims.FirstOrDefault(x => x.Type == "nameid")?.Value;
 
             var res = await _mediator.Send(new AssignRoleCommandRequest() { UserId = id, RoleName = roleName });
+            if (res.Succeeded)
+                return Ok(res.Message);
+            return BadRequest(res.Message);
+        }
+
+        [HttpPut("[action]/{id}")]
+        public async Task<IActionResult> Edit(string id, string name)
+        {
+            var res = await _mediator.Send(new EditRoleCommandRequest() { Id = id, Name = name });
             if (res.Succeeded)
                 return Ok(res.Message);
             return BadRequest(res.Message);
