@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "9xLDNWJaED6QY/orQNsDUmoSE6lXscpkNZnLBm21MJc=",
+  "Hash": "HQghFZdnxkk/d//1jqlRsZgn5vPGp0BcGZtNjJF5aio=",
   "Source": "ShopApi.UI",
   "BasePath": "_content/ShopApi.UI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ShopApi.UI\\wwwroot",
+      "Source": "ShopApi.UI",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
