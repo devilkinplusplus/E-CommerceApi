@@ -12,3 +12,699 @@
 2023-02-26 07:46:52.951 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3537ms
 2023-02-26 07:46:53.139 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
 2023-02-26 07:46:53.652 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 512.9156ms
+2023-02-26 17:23:25.330 +04:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-02-26 17:23:25.414 +04:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-02-26 17:23:25.418 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-02-26 17:23:25.420 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-02-26 17:23:25.497 +04:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-02-26 17:23:25.523 +04:00 [INF] Applying migration '20230226103156_dockerINit'.
+2023-02-26 17:23:25.596 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230226103156_dockerINit', N'7.0.3');
+2023-02-26 17:23:25.608 +04:00 [INF] Applying migration '20230226103214_dockerINit2'.
+2023-02-26 17:23:25.645 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230226103214_dockerINit2', N'7.0.3');
+2023-02-26 17:23:25.647 +04:00 [INF] Applying migration '20230226132212_interception'.
+2023-02-26 17:23:26.061 +04:00 [INF] Executed DbCommand (340ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Categories] ADD [Date] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2023-02-26 17:23:26.066 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Brands] ADD [Date] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2023-02-26 17:23:26.069 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230226132212_interception', N'7.0.3');
+2023-02-27 06:51:04.758 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 06:51:05.026 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 06:51:05.028 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 06:51:05.031 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 06:51:05.032 +04:00 [INF] Hosting environment: Development
+2023-02-27 06:51:05.034 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 06:51:08.478 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 06:51:09.311 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 839.3951ms
+2023-02-27 06:51:09.382 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 06:51:09.382 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 06:51:09.391 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.6560ms
+2023-02-27 06:51:09.487 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.1469ms
+2023-02-27 06:51:09.647 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 06:51:09.880 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 233.6806ms
+2023-02-27 06:51:35.401 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundaryGG7mNSvxLAIuruxj 34108
+2023-02-27 06:51:35.454 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 06:51:35.462 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:51:35.513 +04:00 [INF] Route matched with {action = "CreateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBrand(System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 06:51:40.304 +04:00 [INF] Executed DbCommand (363ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([Id], [Date], [IsDeleted], [Logo], [Name])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2023-02-27 06:51:40.381 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 06:51:40.393 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI) in 4869.6281ms
+2023-02-27 06:51:40.397 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:51:40.417 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundaryGG7mNSvxLAIuruxj 34108 - 200 - text/plain;+charset=utf-8 5016.2571ms
+2023-02-27 06:55:40.488 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 06:55:40.623 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 135.4372ms
+2023-02-27 06:55:40.672 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 06:55:40.676 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.0558ms
+2023-02-27 06:55:40.685 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 06:55:40.741 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.3423ms
+2023-02-27 06:55:41.314 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 06:55:41.446 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.2008ms
+2023-02-27 06:56:08.627 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=--------------------------771358808611102268139466 411216
+2023-02-27 06:56:09.217 +04:00 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-02-27 06:56:09.389 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-27 06:56:09.432 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-27 06:56:09.454 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 06:56:09.489 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 06:56:09.500 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:56:09.503 +04:00 [INF] Route matched with {action = "CreateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBrand(System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 06:56:09.534 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-02-27 06:56:09.551 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI) in 43.6937ms
+2023-02-27 06:56:09.554 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:56:09.562 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=--------------------------771358808611102268139466 411216 - 400 - application/problem+json;+charset=utf-8 934.6062ms
+2023-02-27 06:57:41.456 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=--------------------------282678085874938954601035 411216
+2023-02-27 06:57:41.465 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:57:41.467 +04:00 [INF] Route matched with {action = "CreateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBrand(System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 06:57:41.481 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-02-27 06:57:41.484 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI) in 13.1775ms
+2023-02-27 06:57:41.488 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:57:41.492 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=--------------------------282678085874938954601035 411216 - 400 - application/problem+json;+charset=utf-8 36.3386ms
+2023-02-27 06:58:15.017 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 06:58:15.567 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 06:58:15.581 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 06:58:15.587 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 06:58:15.588 +04:00 [INF] Hosting environment: Development
+2023-02-27 06:58:15.590 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 06:58:16.812 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 06:58:17.380 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 571.0273ms
+2023-02-27 06:58:17.446 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 06:58:17.456 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 9.7058ms
+2023-02-27 06:58:17.476 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 06:58:17.523 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.7335ms
+2023-02-27 06:58:17.747 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 06:58:18.021 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 273.7491ms
+2023-02-27 06:58:20.963 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=--------------------------438256768962820263671123 411216
+2023-02-27 06:58:21.402 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:58:21.467 +04:00 [INF] Route matched with {action = "CreateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBrand(System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 06:58:21.549 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-02-27 06:58:21.566 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI) in 92.8573ms
+2023-02-27 06:58:21.571 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:58:21.584 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=--------------------------438256768962820263671123 411216 - 400 - application/problem+json;+charset=utf-8 621.1838ms
+2023-02-27 06:58:37.918 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 06:58:38.487 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 06:58:38.489 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 06:58:38.493 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 06:58:38.494 +04:00 [INF] Hosting environment: Development
+2023-02-27 06:58:38.496 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 06:58:41.069 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 06:58:41.595 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 527.2751ms
+2023-02-27 06:58:41.643 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 06:58:41.643 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 06:58:41.676 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 32.9843ms
+2023-02-27 06:58:41.706 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.1838ms
+2023-02-27 06:58:41.823 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 06:58:42.156 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 333.5544ms
+2023-02-27 06:58:56.832 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundary552VUn5BE5Lt8o4v 411179
+2023-02-27 06:58:56.924 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 06:58:56.934 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:58:56.999 +04:00 [INF] Route matched with {action = "CreateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBrand(System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 06:59:13.460 +04:00 [INF] Executed DbCommand (276ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([Id], [Date], [IsDeleted], [Logo], [Name])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2023-02-27 06:59:22.197 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 06:59:22.212 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI) in 25202.1214ms
+2023-02-27 06:59:22.216 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 06:59:22.242 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundary552VUn5BE5Lt8o4v 411179 - 200 - text/plain;+charset=utf-8 25410.0724ms
+2023-02-27 07:00:32.933 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:00:33.150 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:00:33.152 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:00:33.156 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:00:33.157 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:00:33.159 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:00:34.920 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:00:35.812 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 901.0924ms
+2023-02-27 07:00:35.860 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:00:35.860 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:00:35.898 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 36.9385ms
+2023-02-27 07:00:35.923 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.0429ms
+2023-02-27 07:00:36.091 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:00:36.511 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 419.8390ms
+2023-02-27 07:00:52.574 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundarydh4nhSA6yGuyTsMh 226
+2023-02-27 07:00:52.636 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:00:52.648 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 07:00:52.710 +04:00 [INF] Route matched with {action = "CreateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBrand(System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:00:52.772 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-02-27 07:00:52.799 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI) in 76.3063ms
+2023-02-27 07:00:52.804 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.CreateBrand (ShopApi.UI)'
+2023-02-27 07:00:52.809 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundarydh4nhSA6yGuyTsMh 226 - 400 - application/problem+json;+charset=utf-8 234.7929ms
+2023-02-27 07:01:32.584 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:01:32.855 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:01:32.858 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:01:32.861 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:01:32.862 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:01:32.864 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:01:34.856 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:01:35.564 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 710.1427ms
+2023-02-27 07:01:35.658 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:01:35.670 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:01:35.671 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 11.2645ms
+2023-02-27 07:01:35.693 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.2810ms
+2023-02-27 07:01:36.262 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:01:36.586 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 324.4010ms
+2023-02-27 07:01:42.834 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundary6KBWYJQHw4VbbZAu 226
+2023-02-27 07:01:42.883 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:01:42.898 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-27 07:01:42.905 +04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-27 07:01:42.909 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/Brands/CreateBrand multipart/form-data;+boundary=----WebKitFormBoundary6KBWYJQHw4VbbZAu 226 - 302 0 - 75.3541ms
+2023-02-27 07:01:42.917 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FBrands%2FCreateBrand - -
+2023-02-27 07:01:42.920 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:01:42.923 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FBrands%2FCreateBrand - - - 404 0 - 5.3303ms
+2023-02-27 07:01:58.622 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:01:58.783 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 161.1779ms
+2023-02-27 07:01:58.814 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:01:58.821 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:01:58.850 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 36.6237ms
+2023-02-27 07:01:58.862 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.6433ms
+2023-02-27 07:01:59.075 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:01:59.158 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.6026ms
+2023-02-27 07:02:12.556 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Auth/Login application/json 73
+2023-02-27 07:02:12.950 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI)'
+2023-02-27 07:02:12.999 +04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginDTO) on controller ShopApi.UI.Controllers.AuthController (ShopApi.UI).
+2023-02-27 07:02:15.179 +04:00 [INF] Executed DbCommand (92ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-27 07:02:15.583 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-27 07:02:15.651 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-27 07:02:15.673 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 07:02:15.717 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 07:02:15.734 +04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-02-27 07:02:15.937 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:02:15.948 +04:00 [INF] Executed action ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI) in 2938.9071ms
+2023-02-27 07:02:15.952 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI)'
+2023-02-27 07:02:15.972 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Auth/Login application/json 73 - 200 - text/plain;+charset=utf-8 3415.3223ms
+2023-02-27 07:02:46.733 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/Roles/CreateRole?name=Admin - 0
+2023-02-27 07:02:46.736 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:02:46.739 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-27 07:02:46.748 +04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-27 07:02:46.750 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/Roles/CreateRole?name=Admin - 0 - 302 0 - 16.5164ms
+2023-02-27 07:02:46.757 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FRoles%2FCreateRole%3Fname%3DAdmin - -
+2023-02-27 07:02:46.760 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:02:46.762 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FRoles%2FCreateRole%3Fname%3DAdmin - - - 404 0 - 5.1938ms
+2023-02-27 07:03:32.869 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Roles/CreateRole?name=Admin - 0
+2023-02-27 07:03:32.877 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.RolesController.CreateRole (ShopApi.UI)'
+2023-02-27 07:03:32.889 +04:00 [INF] Route matched with {action = "CreateRole", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateRole(System.String) on controller ShopApi.UI.Controllers.RolesController (ShopApi.UI).
+2023-02-27 07:03:33.053 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 07:03:33.345 +04:00 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2023-02-27 07:03:33.385 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-02-27 07:03:33.387 +04:00 [INF] Executed action ShopApi.UI.Controllers.RolesController.CreateRole (ShopApi.UI) in 494.244ms
+2023-02-27 07:03:33.391 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.RolesController.CreateRole (ShopApi.UI)'
+2023-02-27 07:03:33.394 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Roles/CreateRole?name=Admin - 0 - 200 0 - 524.6635ms
+2023-02-27 07:03:50.718 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Roles/AssignRole?roleName=Admin - 0
+2023-02-27 07:03:50.724 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.RolesController.AssignRole (ShopApi.UI)'
+2023-02-27 07:03:50.734 +04:00 [INF] Route matched with {action = "AssignRole", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRole(System.String) on controller ShopApi.UI.Controllers.RolesController (ShopApi.UI).
+2023-02-27 07:03:50.889 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-02-27 07:03:50.904 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 07:03:50.937 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-02-27 07:03:50.997 +04:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2023-02-27 07:03:51.011 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-02-27 07:03:51.072 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-27 07:03:51.390 +04:00 [INF] Executed DbCommand (243ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p18='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p19='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [FirstName] = @p6, [LastName] = @p7, [LockoutEnabled] = @p8, [LockoutEnd] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2023-02-27 07:03:51.424 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:03:51.427 +04:00 [INF] Executed action ShopApi.UI.Controllers.RolesController.AssignRole (ShopApi.UI) in 689.1271ms
+2023-02-27 07:03:51.430 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.RolesController.AssignRole (ShopApi.UI)'
+2023-02-27 07:03:51.432 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Roles/AssignRole?roleName=Admin - 0 - 200 - text/plain;+charset=utf-8 714.0961ms
+2023-02-27 07:22:35.060 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:22:35.314 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:22:35.316 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:22:35.319 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:22:35.321 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:22:35.322 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:22:38.242 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:22:38.814 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 574.2659ms
+2023-02-27 07:22:38.972 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:22:38.979 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:22:39.002 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 28.3791ms
+2023-02-27 07:22:39.103 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 124.2355ms
+2023-02-27 07:22:39.250 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:22:39.500 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 249.9483ms
+2023-02-27 07:23:53.957 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:23:54.205 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:23:54.208 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:23:54.210 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:23:54.212 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:23:54.213 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:23:55.577 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:23:56.371 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 798.1439ms
+2023-02-27 07:23:56.489 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:23:56.500 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 10.5552ms
+2023-02-27 07:23:56.501 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:23:56.764 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 263.4741ms
+2023-02-27 07:23:56.925 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:23:57.340 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 415.4244ms
+2023-02-27 07:24:22.136 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand?newName=Amazona multipart/form-data;+boundary=----WebKitFormBoundaryHGSrOKgxISX69BrX 3866787
+2023-02-27 07:24:22.198 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:24:22.207 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:24:22.259 +04:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(System.Guid, System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:24:24.666 +04:00 [INF] Executed DbCommand (106ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Date], [b].[IsDeleted], [b].[Logo], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2023-02-27 07:24:24.948 +04:00 [INF] Executed DbCommand (38ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [Date] = @p0, [IsDeleted] = @p1, [Logo] = @p2, [Name] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-02-27 07:24:24.982 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:24:24.994 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI) in 2723.9579ms
+2023-02-27 07:24:24.998 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:24:25.017 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand?newName=Amazona multipart/form-data;+boundary=----WebKitFormBoundaryHGSrOKgxISX69BrX 3866787 - 200 - text/plain;+charset=utf-8 2881.3599ms
+2023-02-27 07:24:44.415 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:24:44.435 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 19.4010ms
+2023-02-27 07:24:44.475 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:24:44.484 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:24:44.491 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 15.5076ms
+2023-02-27 07:24:44.500 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.1978ms
+2023-02-27 07:24:44.676 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:24:44.702 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.0982ms
+2023-02-27 07:24:54.214 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand?newName=Amazon multipart/form-data;+boundary=----WebKitFormBoundaryUulNFy98g8NIdY8G 263
+2023-02-27 07:24:54.223 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:24:54.226 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:24:54.230 +04:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(System.Guid, System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:24:54.250 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-02-27 07:24:54.266 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI) in 31.8852ms
+2023-02-27 07:24:54.269 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:24:54.272 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand?newName=Amazon multipart/form-data;+boundary=----WebKitFormBoundaryUulNFy98g8NIdY8G 263 - 400 - application/problem+json;+charset=utf-8 58.6834ms
+2023-02-27 07:25:24.929 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:25:25.198 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:25:25.201 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:25:25.205 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:25:25.207 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:25:25.208 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:25:25.468 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:25:25.840 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 372.9836ms
+2023-02-27 07:25:25.865 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:25:25.865 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:25:25.872 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.2132ms
+2023-02-27 07:25:25.885 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.6890ms
+2023-02-27 07:25:26.056 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:25:26.269 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.4547ms
+2023-02-27 07:25:41.576 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand?newName=Amazon multipart/form-data;+boundary=----WebKitFormBoundaryBiRmRVgHo3lA8Qm5 263
+2023-02-27 07:25:41.632 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:25:41.644 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:25:41.697 +04:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(System.Guid, System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:25:43.698 +04:00 [INF] Executed DbCommand (52ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Date], [b].[IsDeleted], [b].[Logo], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2023-02-27 07:25:44.145 +04:00 [INF] Executed DbCommand (177ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [Date] = @p0, [IsDeleted] = @p1, [Logo] = @p2, [Name] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-02-27 07:25:44.182 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:25:44.195 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI) in 2489.1973ms
+2023-02-27 07:25:44.200 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:25:44.218 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand?newName=Amazon multipart/form-data;+boundary=----WebKitFormBoundaryBiRmRVgHo3lA8Qm5 263 - 200 - text/plain;+charset=utf-8 2642.3667ms
+2023-02-27 07:27:36.940 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:27:37.271 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:27:37.276 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:27:37.280 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:27:37.283 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:27:37.285 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:27:40.075 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:27:40.624 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 553.5279ms
+2023-02-27 07:27:40.665 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:27:40.679 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:27:40.722 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 50.2519ms
+2023-02-27 07:27:40.746 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.6569ms
+2023-02-27 07:27:40.906 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:27:41.226 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.0289ms
+2023-02-27 07:27:58.170 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand multipart/form-data;+boundary=----WebKitFormBoundaryXazfpXQ0nzzgAfXQ 263
+2023-02-27 07:27:58.241 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:27:58.253 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:27:58.350 +04:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(System.Guid, System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:28:00.843 +04:00 [INF] Executed DbCommand (111ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Date], [b].[IsDeleted], [b].[Logo], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2023-02-27 07:28:01.317 +04:00 [INF] Executed DbCommand (189ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [Date] = @p0, [IsDeleted] = @p1, [Logo] = @p2, [Name] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-02-27 07:28:01.349 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:28:01.361 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI) in 3000.7607ms
+2023-02-27 07:28:01.365 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:28:01.383 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand multipart/form-data;+boundary=----WebKitFormBoundaryXazfpXQ0nzzgAfXQ 263 - 200 - text/plain;+charset=utf-8 3213.6503ms
+2023-02-27 07:28:12.006 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand multipart/form-data;+boundary=----WebKitFormBoundarysMJNGTFydL0cJQuj 1312934
+2023-02-27 07:28:12.021 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:28:12.024 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:28:12.027 +04:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(System.Guid, System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:28:12.198 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Date], [b].[IsDeleted], [b].[Logo], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2023-02-27 07:28:12.233 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [Date] = @p0, [IsDeleted] = @p1, [Logo] = @p2, [Name] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-02-27 07:28:12.244 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:28:12.251 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI) in 220.2943ms
+2023-02-27 07:28:12.254 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:28:12.260 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand multipart/form-data;+boundary=----WebKitFormBoundarysMJNGTFydL0cJQuj 1312934 - 200 - text/plain;+charset=utf-8 253.9063ms
+2023-02-27 07:30:08.053 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:30:08.342 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:30:08.344 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:30:08.347 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:30:08.349 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:30:08.351 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:30:10.937 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:30:11.517 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 581.3640ms
+2023-02-27 07:30:11.573 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:30:11.574 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:30:11.585 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 10.6920ms
+2023-02-27 07:30:11.606 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.4268ms
+2023-02-27 07:30:11.823 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:30:12.066 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 243.9784ms
+2023-02-27 07:30:23.866 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand multipart/form-data;+boundary=----WebKitFormBoundary7hjciExxYAyWmDqC 263
+2023-02-27 07:30:23.925 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:30:23.934 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:30:24.017 +04:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(System.Guid, System.String, Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:30:24.366 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:30:24.375 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI) in 349.7243ms
+2023-02-27 07:30:24.380 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.UpdateBrand (ShopApi.UI)'
+2023-02-27 07:30:24.387 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7162/api/Brands/UpdateBrand multipart/form-data;+boundary=----WebKitFormBoundary7hjciExxYAyWmDqC 263 - 200 - text/plain;+charset=utf-8 521.3844ms
+2023-02-27 07:38:47.111 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 07:38:47.505 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 07:38:47.587 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 07:38:47.601 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 07:38:47.603 +04:00 [INF] Hosting environment: Development
+2023-02-27 07:38:47.605 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 07:38:50.309 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 07:38:50.812 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 504.2676ms
+2023-02-27 07:38:50.868 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 07:38:50.868 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 07:38:50.878 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.7964ms
+2023-02-27 07:38:50.912 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.3842ms
+2023-02-27 07:38:51.162 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 07:38:51.453 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 290.8262ms
+2023-02-27 07:38:59.304 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7162/api/Brands/DeleteBrand/7b343b9b-0e3d-43a5-9063-08db186e9a5b - -
+2023-02-27 07:38:59.355 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 07:38:59.364 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.BrandsController.DeleteBrand (ShopApi.UI)'
+2023-02-27 07:38:59.422 +04:00 [INF] Route matched with {action = "DeleteBrand", controller = "Brands"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteBrand(System.Guid) on controller ShopApi.UI.Controllers.BrandsController (ShopApi.UI).
+2023-02-27 07:39:01.758 +04:00 [INF] Executed DbCommand (148ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Date], [b].[IsDeleted], [b].[Logo], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2023-02-27 07:39:02.057 +04:00 [INF] Executed DbCommand (44ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [Date] = @p0, [IsDeleted] = @p1, [Logo] = @p2, [Name] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-02-27 07:39:02.087 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 07:39:02.099 +04:00 [INF] Executed action ShopApi.UI.Controllers.BrandsController.DeleteBrand (ShopApi.UI) in 2667.1351ms
+2023-02-27 07:39:02.103 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.BrandsController.DeleteBrand (ShopApi.UI)'
+2023-02-27 07:39:02.124 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7162/api/Brands/DeleteBrand/7b343b9b-0e3d-43a5-9063-08db186e9a5b - - - 200 - text/plain;+charset=utf-8 2820.4303ms
+2023-02-27 08:11:08.090 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 08:11:08.434 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 08:11:08.436 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 08:11:08.440 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 08:11:08.442 +04:00 [INF] Hosting environment: Development
+2023-02-27 08:11:08.444 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 08:11:11.119 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 08:11:11.702 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 586.9648ms
+2023-02-27 08:11:11.803 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 08:11:11.806 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 08:11:11.833 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 29.0005ms
+2023-02-27 08:11:11.877 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.2913ms
+2023-02-27 08:11:12.057 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 08:11:12.411 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 353.9466ms
+2023-02-27 08:14:22.774 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 08:14:23.032 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 08:14:23.034 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 08:14:23.037 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 08:14:23.038 +04:00 [INF] Hosting environment: Development
+2023-02-27 08:14:23.039 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 08:14:25.719 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 08:14:26.328 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 613.3032ms
+2023-02-27 08:14:26.486 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 08:14:26.512 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 08:14:26.565 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 78.0750ms
+2023-02-27 08:14:26.596 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.7266ms
+2023-02-27 08:14:26.768 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 08:14:27.047 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.5335ms
+2023-02-27 08:14:36.056 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/Products/Create multipart/form-data;+boundary=----WebKitFormBoundaryDLMkQlEQxtu8rz4G 418
+2023-02-27 08:14:36.101 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 08:14:36.116 +04:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-02-27 08:14:36.123 +04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-27 08:14:36.127 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/Products/Create multipart/form-data;+boundary=----WebKitFormBoundaryDLMkQlEQxtu8rz4G 418 - 302 0 - 71.7215ms
+2023-02-27 08:14:36.136 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FProducts%2FCreate - -
+2023-02-27 08:14:36.139 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 08:14:36.142 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FProducts%2FCreate - - - 404 0 - 5.9503ms
+2023-02-27 08:18:32.443 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Auth/Login application/json 73
+2023-02-27 08:18:34.570 +04:00 [INF] Executed DbCommand (121ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-02-27 08:18:34.838 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-27 08:18:34.934 +04:00 [INF] Executed DbCommand (46ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-27 08:18:34.960 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 08:18:35.001 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 08:18:35.012 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 08:18:35.020 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 08:18:35.030 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI)'
+2023-02-27 08:18:35.061 +04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginDTO) on controller ShopApi.UI.Controllers.AuthController (ShopApi.UI).
+2023-02-27 08:18:35.164 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-27 08:18:35.293 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-27 08:18:35.300 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-27 08:18:35.306 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 08:18:35.312 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 08:18:35.317 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 08:18:35.322 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 08:18:35.335 +04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-02-27 08:18:35.495 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-27 08:18:35.508 +04:00 [INF] Executed action ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI) in 439.5464ms
+2023-02-27 08:18:35.510 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI)'
+2023-02-27 08:18:35.527 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Auth/Login application/json 73 - 200 - application/json;+charset=utf-8 3084.0599ms
+2023-02-27 08:18:54.800 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Products/Create multipart/form-data;+boundary=--------------------------466890447428801180543570 570
+2023-02-27 08:18:54.806 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Create (ShopApi.UI)'
+2023-02-27 08:18:54.827 +04:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CreateProductDTO) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-02-27 08:18:55.419 +04:00 [INF] Executed DbCommand (261ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 50), @p7='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BrandId], [CategoryId], [Date], [IsDeleted], [Link], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-02-27 08:18:55.442 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 08:18:55.445 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Create (ShopApi.UI) in 615.8366ms
+2023-02-27 08:18:55.447 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Create (ShopApi.UI)'
+2023-02-27 08:18:55.450 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Products/Create multipart/form-data;+boundary=--------------------------466890447428801180543570 570 - 200 - text/plain;+charset=utf-8 650.1514ms
+2023-02-27 08:19:36.137 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Products/Create multipart/form-data;+boundary=--------------------------064347316961433367248282 564
+2023-02-27 08:19:36.141 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Create (ShopApi.UI)'
+2023-02-27 08:19:36.142 +04:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CreateProductDTO) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-02-27 08:19:36.151 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-02-27 08:19:36.156 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Create (ShopApi.UI) in 11.5141ms
+2023-02-27 08:19:36.158 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Create (ShopApi.UI)'
+2023-02-27 08:19:36.160 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Products/Create multipart/form-data;+boundary=--------------------------064347316961433367248282 564 - 400 - application/problem+json;+charset=utf-8 22.5130ms
+2023-02-27 08:27:39.205 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 08:27:39.494 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 08:27:39.497 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 08:27:39.499 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 08:27:39.501 +04:00 [INF] Hosting environment: Development
+2023-02-27 08:27:39.503 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 08:27:42.408 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 08:27:43.016 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 611.5261ms
+2023-02-27 08:27:43.192 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - -
+2023-02-27 08:27:43.192 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/_vs/browserLink - -
+2023-02-27 08:27:43.209 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 15.4971ms
+2023-02-27 08:27:43.239 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.3626ms
+2023-02-27 08:27:43.447 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - -
+2023-02-27 08:27:43.762 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 315.2569ms
+2023-02-27 08:28:01.533 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7162/api/Products/Delete/63351621-380e-4f96-19cc-08db1879bd54 - -
+2023-02-27 08:28:01.570 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 08:28:01.580 +04:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-02-27 08:28:01.586 +04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-27 08:28:01.589 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7162/api/Products/Delete/63351621-380e-4f96-19cc-08db1879bd54 - - - 302 0 - 55.2467ms
+2023-02-27 08:28:01.596 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FProducts%2FDelete%2F63351621-380e-4f96-19cc-08db1879bd54 - -
+2023-02-27 08:28:01.598 +04:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2023-02-27 08:28:01.600 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7162/Account/Login?ReturnUrl=%2Fapi%2FProducts%2FDelete%2F63351621-380e-4f96-19cc-08db1879bd54 - - - 404 0 - 4.2092ms
+2023-02-27 08:28:29.452 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7162/api/Auth/Login application/json 73
+2023-02-27 08:28:29.774 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI)'
+2023-02-27 08:28:29.804 +04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginDTO) on controller ShopApi.UI.Controllers.AuthController (ShopApi.UI).
+2023-02-27 08:28:31.655 +04:00 [INF] Executed DbCommand (108ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-27 08:28:32.058 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-27 08:28:32.152 +04:00 [INF] Executed DbCommand (46ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-27 08:28:32.171 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 08:28:32.206 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 08:28:32.217 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-27 08:28:32.224 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-27 08:28:32.239 +04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-02-27 08:28:32.404 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-02-27 08:28:32.415 +04:00 [INF] Executed action ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI) in 2603.0521ms
+2023-02-27 08:28:32.419 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.AuthController.Login (ShopApi.UI)'
+2023-02-27 08:28:32.435 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7162/api/Auth/Login application/json 73 - 200 - application/json;+charset=utf-8 2983.2027ms
+2023-02-27 08:28:49.869 +04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7162/api/Products/Delete/63351621-380e-4f96-19cc-08db1879bd54 - -
+2023-02-27 08:28:49.875 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Delete (ShopApi.UI)'
+2023-02-27 08:28:49.888 +04:00 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-02-27 08:28:49.973 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[Date], [p].[IsDeleted], [p].[Link], [p].[Title], [p].[UserId]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0
+2023-02-27 08:28:50.338 +04:00 [INF] Executed DbCommand (250ms) [Parameters=[@p7='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 50), @p6='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [BrandId] = @p0, [CategoryId] = @p1, [Date] = @p2, [IsDeleted] = @p3, [Link] = @p4, [Title] = @p5, [UserId] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2023-02-27 08:28:50.353 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-02-27 08:28:50.356 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Delete (ShopApi.UI) in 465.7373ms
+2023-02-27 08:28:50.357 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Delete (ShopApi.UI)'
+2023-02-27 08:28:50.359 +04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7162/api/Products/Delete/63351621-380e-4f96-19cc-08db1879bd54 - - - 200 - text/plain;+charset=utf-8 490.2923ms
+2023-02-27 08:40:29.616 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-27 08:40:30.320 +04:00 [INF] Now listening on: https://localhost:7162
+2023-02-27 08:40:30.325 +04:00 [INF] Now listening on: http://localhost:5023
+2023-02-27 08:40:30.333 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-27 08:40:30.339 +04:00 [INF] Hosting environment: Development
+2023-02-27 08:40:30.343 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-02-27 08:40:32.387 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/swagger/index.html - -
+2023-02-27 08:40:33.026 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/swagger/index.html - - - 200 - text/html;charset=utf-8 642.5081ms

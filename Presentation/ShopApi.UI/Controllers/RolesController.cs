@@ -22,7 +22,7 @@ namespace ShopApi.UI.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> CreateRole(string name)
+        public async Task<IActionResult> CreateRole([FromForm]string name)
         {
             CreateRoleCommandResponse res = await _mediator.Send(new CreateRoleCommandRequest { Name = name });
             if (res.Succeeded)
@@ -44,8 +44,8 @@ namespace ShopApi.UI.Controllers
             return BadRequest(res.Message);
         }
 
-        [HttpPut("[action]/{id}")]
-        public async Task<IActionResult> Edit(string id, string name)
+        [HttpPut("[action]")]
+        public async Task<IActionResult> Edit([FromForm]string id, string name)
         {
             var res = await _mediator.Send(new EditRoleCommandRequest() { Id = id, Name = name });
             if (res.Succeeded)

@@ -10,5 +10,7 @@ namespace ShopApi.Domain.Entities.Common
     {
         public Guid Id { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime Date { get; set; }
+
     }
 }

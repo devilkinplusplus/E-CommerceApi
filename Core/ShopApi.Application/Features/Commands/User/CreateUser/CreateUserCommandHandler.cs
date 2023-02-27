@@ -26,7 +26,7 @@ namespace ShopApi.Application.Features.Commands.User.CreateUser
             if (response.Succeeded)
             {
                 await _roleService.AssignRoleToUser(response.User.Id, "User");   
-                return new() { Succeeded = true };
+                return new() { Succeeded = true,Message = "You have registered successfully" };
             }
             return new() { Succeeded = false, Errors = response.Errors };
         }

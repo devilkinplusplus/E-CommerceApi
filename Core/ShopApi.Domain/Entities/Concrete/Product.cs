@@ -19,6 +19,5 @@ namespace ShopApi.Domain.Entities.Concrete
         public Guid BrandId { get; set; }
         public AppUser User { get; set; }
         public string UserId { get; set; }
-        public DateTime Date { get; set; }
     }
 }

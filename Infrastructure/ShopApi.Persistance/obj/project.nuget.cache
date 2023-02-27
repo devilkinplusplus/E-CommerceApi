@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sVidawzdpNMxpXEyg37I27R2R3H71IujjhkAdnvwazFVJdbid64jCs8YGAPi6mj8CzCPIgmF1s42TV4WLe2Ekw==",
+  "dgSpecHash": "rH/0ly91sGGyM4k0Da2SvP+iv70Jsqs5leu43lEki4tgGY9SdVQKVlo1kxLJEJl2+rWuBnTr6M+/bsX5WowEzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\ShopApi\\Infrastructure\\ShopApi.Persistance\\ShopApi.Persistance.csproj",
   "expectedPackageFiles": [

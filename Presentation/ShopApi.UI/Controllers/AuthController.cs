@@ -21,7 +21,7 @@ namespace ShopApi.UI.Controllers
         {
             var res = await _mediator.Send(new LoginCommandRequest() { LoginDTO = model });
             if(res.Succeeded)
-                return Ok(res.Message);
+                return Ok(new { token = res.Message });
             return BadRequest(res.Message);
         }
     }
