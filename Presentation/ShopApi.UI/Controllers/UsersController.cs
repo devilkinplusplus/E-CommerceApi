@@ -18,11 +18,11 @@ namespace ShopApi.UI.Controllers
         }
 
         [HttpPost("createUser")]
-        public async Task<IActionResult> CreateUser(CreateUserDTO model)
+        public async Task<IActionResult> CreateUser([FromForm] CreateUserDTO model)
         {
            CreateUserCommandResponse res = await _mediator.Send(new CreateUserCommandRequest() { CreateUserModel = model });
             if (res.Succeeded)
-                return Ok("You have registered successfully");
+                return Ok(res.Message);
             return BadRequest(res.Errors);
         }
     }

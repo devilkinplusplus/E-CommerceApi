@@ -1851,6 +1851,7 @@
           "FluentValidation.DependencyInjectionExtensions": "11.5.1",
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "ShopApi.Domain": "1.0.0"
         },

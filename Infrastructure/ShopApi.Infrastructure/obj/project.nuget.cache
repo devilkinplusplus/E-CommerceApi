@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wC4ZO7TlBLt2ushLjowr3RJDXnwjm8zH6ccqAxS7fdE+rTrMk8mdlKvyDvFAre0xJHCEXZXVlJH2uj4q+b8vjw==",
+  "dgSpecHash": "7vwOHhgRKDA92HXGVuXRXb54EtQi9she7euN9Kyr9MRy7lEkfgofEseVIE+ZFurK7CyMgndkxk61Q3Eyy/DEiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\ShopApi\\Infrastructure\\ShopApi.Infrastructure\\ShopApi.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\user\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.3\\microsoft.aspnetcore.cryptography.internal.7.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.3\\microsoft.aspnetcore.cryptography.keyderivation.7.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.3\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

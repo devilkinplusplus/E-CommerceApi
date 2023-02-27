@@ -19,7 +19,7 @@ namespace ShopApi.UI.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Post(string name)
+        public async Task<IActionResult> Post([FromForm]string name)
         {
             var res = await _mediator.Send(new CreateCategoryCommandRequest() { Name = name });
             if (res.Succeeded)
@@ -27,8 +27,8 @@ namespace ShopApi.UI.Controllers
             return BadRequest(res.Message);
         }
 
-        [HttpPut("[action]/{id}")]
-        public async Task<IActionResult> Edit(Guid id,string name)
+        [HttpPut("[action]")]
+        public async Task<IActionResult> Edit([FromRoute]Guid id,[FromBody]string name)
         {
             var res = await _mediator.Send(new EditCategoryCommandRequest() { Id = id, Name = name });
             if(res.Succeeded)
@@ -38,7 +38,7 @@ namespace ShopApi.UI.Controllers
 
 
         [HttpDelete("[action]/{id}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var res = await _mediator.Send(new DeleteCategoryCommandRequest() { Id = id });
             if (res.Succeeded)
