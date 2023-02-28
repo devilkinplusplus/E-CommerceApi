@@ -44,10 +44,10 @@ namespace ShopApi.UI.Controllers
             if (res.Succeeded)
                 return Ok(res.Message);
             return BadRequest(res.Message);
-        }
+        } 
 
         [HttpGet("[action]")]
-        public async Task<IActionResult> GetCategories()
+        public async Task<IActionResult> Get()
         {
             var res = await _mediator.Send(new GetAllCategoryQueryRequest());
             if (res.Succeeded)
