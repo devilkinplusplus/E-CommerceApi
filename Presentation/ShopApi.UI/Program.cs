@@ -21,8 +21,14 @@ builder.Services.AddPersistanceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddAplicationServices();
 
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
+{
+    policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+}));
 
 //logging with serilog
 Logger log = new LoggerConfiguration()
@@ -57,10 +63,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseHttpLogging();
+app.UseCors();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSerilogRequestLogging();
+
 
 app.UseAuthentication();
 app.UseAuthorization();

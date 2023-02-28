@@ -24,7 +24,7 @@ namespace ShopApi.Persistance
                 {
                     configuration.AddJsonFile("appsettings.Production.json");
                 }
-                return configuration.GetConnectionString("SqlServer");
+                return configuration.GetConnectionString("SqlDocker");
             }
         }
     }

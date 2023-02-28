@@ -39,7 +39,7 @@ namespace ShopApi.UI.Controllers
         }
 
         [HttpPut("[action]")]
-        public async Task<IActionResult> UpdateBrand([FromRoute] Guid id,[FromBody] string? newName,[FromBody] IFormFile? newLogo)
+        public async Task<IActionResult> UpdateBrand([FromRoute] Guid id,[FromBody] string? newName, IFormFile? newLogo)
         {
             var res = await _mediator.Send(new UpdateBrandCommandRequest()
             {
