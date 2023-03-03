@@ -1,6 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShopApi.Application.Abstractions.Services.Tokens;
-using ShopApi.Infrastructure.Services.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +11,6 @@ namespace ShopApi.Infrastructure
     {
         public static void AddInfrastructureServices(this IServiceCollection services)
         {
-            services.AddScoped<ITokenHandler, TokenHandler>();
         }
     }
 }

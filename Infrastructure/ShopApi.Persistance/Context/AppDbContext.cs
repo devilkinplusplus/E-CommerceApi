@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using ShopApi.Domain.Entities.Common;
 using ShopApi.Domain.Entities.Concrete;
 using ShopApi.Domain.Entities.Identity;
-using ShopApi.Persistance.Configurations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,14 +22,11 @@ namespace ShopApi.Persistance.Context
         }
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<Brand> Brands { get; set; }
-        public DbSet<Category> Categories{ get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+    
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //spesific configurations
-            builder.ApplyConfiguration(new ProductConfiguration());
-            builder.ApplyConfiguration(new CategoryConfiguration());
-            builder.ApplyConfiguration(new BrandConfiguration());
 
             base.OnModelCreating(builder);
         }

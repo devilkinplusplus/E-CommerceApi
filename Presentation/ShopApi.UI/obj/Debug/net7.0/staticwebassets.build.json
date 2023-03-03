@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BSE0wDKwtWrZNdoB0CfxdNgzAa/nrRIqKTo7pYOuShY=",
+  "Hash": "RYE4ztRud0PU5mqFkNNree1evm74QEqr6o9F2gfAh7A=",
   "Source": "ShopApi.UI",
   "BasePath": "_content/ShopApi.UI",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\images\\29fa123d-cd13-4470-abb1-2071ed08b120landscape_waterfall_stones_rocks_stream_bushes_algae_blue_sky_background_4k_hd_nature-3840x2160.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "images/29fa123d-cd13-4470-abb1-2071ed08b120landscape_waterfall_stones_rocks_stream_bushes_algae_blue_sky_background_4k_hd_nature-3840x2160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\29fa123d-cd13-4470-abb1-2071ed08b120landscape_waterfall_stones_rocks_stream_bushes_algae_blue_sky_background_4k_hd_nature-3840x2160.jpg"
+    },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\images\\361ab726-e7bf-4466-a165-7a667c798645Black Simple Text Deskstop Wallpaper.png",
       "SourceId": "ShopApi.UI",
@@ -49,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\73478600-83b0-4a67-a3e5-2a646a797b35pexels-sam-kolder-2387873.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\images\\7cc06a29-e337-4d1b-b976-6f13e8b9313dfacebook_word_blue_background_hd_facebook.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "images/7cc06a29-e337-4d1b-b976-6f13e8b9313dfacebook_word_blue_background_hd_facebook.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7cc06a29-e337-4d1b-b976-6f13e8b9313dfacebook_word_blue_background_hd_facebook.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\images\\8f95fb48-64a2-4c95-93f2-3ecb1e7080d8facebook_word_blue_background_hd_facebook.jpg",

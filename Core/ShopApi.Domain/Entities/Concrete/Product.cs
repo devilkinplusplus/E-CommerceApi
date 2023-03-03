@@ -12,12 +12,9 @@ namespace ShopApi.Domain.Entities.Concrete
     public class Product:BaseEntity
     {
         public string Title { get; set; }
-        public string Link { get; set; }
-        public Category Category { get; set; }
-        public Guid CategoryId { get; set; }
-        public Brand Brand { get; set; }
-        public Guid BrandId { get; set; }
-        public AppUser User { get; set; }
-        public string UserId { get; set; }
+        public string Description { get; set; }
+        public int Stock { get; set; }
+        public float Price { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }
