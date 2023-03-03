@@ -12,17 +12,22 @@ using Serilog;
 using Serilog.Core;
 using FluentValidation.AspNetCore;
 using ShopApi.Application.Validators;
+using ShopApi.Application.Validators.Products;
+using ShopApi.Infrastructure.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule(new AutofacBusinessModule()));
 
-builder.Services.AddControllers();
 builder.Services.AddPersistanceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddAplicationServices();
 
+
+builder.Services.AddControllers(opt => opt.Filters.Add<ValidationFilter>())
+    .AddFluentValidation(con => con.RegisterValidatorsFromAssemblyContaining<ProductCreateValidator>())
+    .ConfigureApiBehaviorOptions(x => x.SuppressModelStateInvalidFilter = true);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
