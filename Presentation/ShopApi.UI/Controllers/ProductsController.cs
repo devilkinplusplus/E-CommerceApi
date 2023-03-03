@@ -2,56 +2,69 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ShopApi.Application.Features.Commands.Product.Create;
-using ShopApi.Application.Features.Commands.Product.Delete;
-using ShopApi.Application.Features.Commands.Product.Update;
+using ShopApi.Application.Repositories;
+using ShopApi.Application.ViewModels;
 using ShopApi.Domain.Entities.Concrete;
-using static ShopApi.Application.DTOs.ProductDTO;
+using System.Net;
 
 namespace ShopApi.UI.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        private readonly IMediator _mediator;
-        public ProductsController(IMediator mediator)
+        private readonly IProductWriteRepository _productWrite;
+        private readonly IProductReadRepository _productRead;
+        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite)
         {
-            _mediator = mediator;
+            _productRead = productRead;
+            _productWrite = productWrite;
         }
-        [HttpPost("[action]")]
-        public async Task<IActionResult> Create([FromForm] CreateProductDTO product)
+
+        [HttpGet]
+        public IActionResult Get()
         {
-            var res = await _mediator.Send(new CreateProductCommandRequest()
+            return Ok(_productRead.GetAll(x => x.IsDeleted == false));
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(Guid id)
+        {
+            return Ok(await _productRead.GetByIdAsync(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(ProductCreateVM model)
+        {
+            await _productWrite.AddAsync(new()
             {
-                Title = product.title,
-                Link = product.link,
-                BrandId = product.brandId,
-                CategoryId = product.categoryId,
+                Title = model.Title,
+                Price = model.Price,
+                Stock = model.Stock,
+                Description = model.Description
             });
-            if (res.Succeeded)
-                return Ok(res.Message);
-            return BadRequest(res.Message);
+            await _productWrite.SaveAsync();
+            return StatusCode((int)HttpStatusCode.Created);
         }
 
-
-        [HttpDelete("[action]/{id}")]
-        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        [HttpPut]
+        public async Task<IActionResult> Put(ProductUpdateVM model)
         {
-            var res = await _mediator.Send(new DeleteProductCommandRequest() { Id = id });
-            if (res.Succeeded)
-                return Ok(res.Message);
-            return BadRequest(res.Message);
+            Product product = await _productRead.GetByIdAsync(model.Id);
+            product.Title = model.Title;
+            product.Description= model.Description;
+            product.Stock = model.Stock;
+            product.Price = model.Price;
+            await _productWrite.SaveAsync();
+            return NoContent();
         }
 
-        [HttpPut("[action]")]
-        public async Task<IActionResult> Update([FromRoute] Guid id,[FromBody] CreateProductDTO model)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
         {
-            var res = await _mediator.Send(new UpdateProductCommandRequest() { Id = id, NewProduct = model });
-            if (res.Succeeded)
-                return Ok(res.Message);
-            return BadRequest(res.Message);
+            await _productWrite.RemoveAsync(id);
+            await _productWrite.SaveAsync();
+            return NoContent();
         }
 
     }

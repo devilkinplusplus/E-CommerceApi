@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using Microsoft.IdentityModel.Tokens;
 using ShopApi.Application.Abstractions.Services;
-using ShopApi.Application.Abstractions.Services.Tokens;
 using ShopApi.Application.Repositories;
 using ShopApi.Persistance.Repositories;
 using ShopApi.Persistance.Services;
@@ -19,19 +18,18 @@ namespace ShopApi.Persistance.Autofac
         {
             //services
             builder.RegisterType<UserService>().As<IUserService>();
-            builder.RegisterType<AuthService>().As<IAuthService>();
             builder.RegisterType<RoleService>().As<IRoleService>();
             builder.RegisterType<ProductService>().As<IProductService>();
-            builder.RegisterType<BrandService>().As<IBrandService>();
-            builder.RegisterType<CategoryService>().As<ICategoryService>();
+            builder.RegisterType<OrderService>().As<IOrderService>();
+            builder.RegisterType<CustomerService>().As<ICustomerService>();
 
             //repositories
-            builder.RegisterType<CategoryReadRepository>().As<ICategoryReadRepository>();
-            builder.RegisterType<CategoryWriteRepository>().As<ICategoryWriteRepository>();
-            builder.RegisterType<BrandReadRepository>().As<IBrandReadRepository>();
-            builder.RegisterType<BrandWriteRepository>().As<IBrandWriteRepository>();
             builder.RegisterType<ProductReadRepository>().As<IProductReadRepository>();
             builder.RegisterType<ProductWriteRepository>().As<IProductWriteRepository>();
+            builder.RegisterType<CustomerReadRepository>().As<ICustomerReadRepository>();
+            builder.RegisterType<CustomerWriteRepository>().As<ICustomerWriteRepository>();
+            builder.RegisterType<OrderReadRepository>().As<IOrderReadRepository>();
+            builder.RegisterType<OrderWriteRepository>().As<IOrderWriteRepository>();
         }
     }
 }

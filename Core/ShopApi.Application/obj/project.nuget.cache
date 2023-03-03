@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ho5TuQ1C4E93Zs0O5vJ4UBQXFDAgLh7qeu7FMnV5LMZoO4H44JN4JcT/85Y9YOLAKF4FMW7SE5tMUZos4u05lw==",
+  "dgSpecHash": "U1NHxJ8tLP5eOBLUWd5lzXNFb+BLacrSj5T4TeiLS01dxWOV/Wrbj9j7f9iw3LeQLfF9by0w/svb+kVOpxFWrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\ShopApi\\Core\\ShopApi.Application\\ShopApi.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

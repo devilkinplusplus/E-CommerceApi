@@ -10,6 +10,8 @@ using System.Text;
 using ShopApi.Infrastructure;
 using Serilog;
 using Serilog.Core;
+using FluentValidation.AspNetCore;
+using ShopApi.Application.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 

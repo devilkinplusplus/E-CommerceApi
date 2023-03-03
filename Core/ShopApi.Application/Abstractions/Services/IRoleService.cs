@@ -11,7 +11,6 @@ namespace ShopApi.Application.Abstractions.Services
     public interface IRoleService
     {
         Task<CreateRoleResponse> CreateRoleAsync(string name);
-        Task<AssignRoleToUserResponse> AssignRoleToUser(string userId,string roleName);
         Task<bool> EditRoleAsync(string roleId,string roleName);
     }
 }

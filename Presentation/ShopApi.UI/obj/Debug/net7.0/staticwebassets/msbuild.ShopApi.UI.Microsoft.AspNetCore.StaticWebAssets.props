@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\29fa123d-cd13-4470-abb1-2071ed08b120landscape_waterfall_stones_rocks_stream_bushes_algae_blue_sky_background_4k_hd_nature-3840x2160.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShopApi.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShopApi.UI</BasePath>
+      <RelativePath>images/29fa123d-cd13-4470-abb1-2071ed08b120landscape_waterfall_stones_rocks_stream_bushes_algae_blue_sky_background_4k_hd_nature-3840x2160.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\29fa123d-cd13-4470-abb1-2071ed08b120landscape_waterfall_stones_rocks_stream_bushes_algae_blue_sky_background_4k_hd_nature-3840x2160.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\361ab726-e7bf-4466-a165-7a667c798645Black Simple Text Deskstop Wallpaper.png))">
       <SourceType>Package</SourceType>
       <SourceId>ShopApi.UI</SourceId>
@@ -31,6 +47,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\73478600-83b0-4a67-a3e5-2a646a797b35pexels-sam-kolder-2387873.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7cc06a29-e337-4d1b-b976-6f13e8b9313dfacebook_word_blue_background_hd_facebook.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShopApi.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShopApi.UI</BasePath>
+      <RelativePath>images/7cc06a29-e337-4d1b-b976-6f13e8b9313dfacebook_word_blue_background_hd_facebook.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7cc06a29-e337-4d1b-b976-6f13e8b9313dfacebook_word_blue_background_hd_facebook.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8f95fb48-64a2-4c95-93f2-3ecb1e7080d8facebook_word_blue_background_hd_facebook.jpg))">
       <SourceType>Package</SourceType>
