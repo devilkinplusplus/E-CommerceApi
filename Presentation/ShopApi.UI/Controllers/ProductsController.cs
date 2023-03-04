@@ -28,6 +28,7 @@ namespace ShopApi.UI.Controllers
             var totalCount = _productRead.GetAll(x => x.IsDeleted == false, false).Count();
             var data = _productRead.GetAll(x => x.IsDeleted == false, false).Select(x => new
             {
+                x.Id,
                 x.Title,
                 x.Price,
                 x.Stock,
