@@ -16,10 +16,12 @@ namespace ShopApi.UI.Controllers
     {
         private readonly IProductWriteRepository _productWrite;
         private readonly IProductReadRepository _productRead;
-        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite, IWebHostEnvironment webHostEnvironment)
         {
             _productRead = productRead;
             _productWrite = productWrite;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -80,6 +82,24 @@ namespace ShopApi.UI.Controllers
             await _productWrite.RemoveAsync(id);
             await _productWrite.SaveAsync();
             return NoContent();
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload()
+        {
+            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads/productImages");
+
+            foreach (IFormFile file in Request.Form.Files)
+            {
+                string fullPath = Path.Combine(uploadPath, $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}");
+
+                using FileStream fileStream = new(fullPath, FileMode.Create, FileAccess.Write, FileShare.None,
+                        1024 * 1024, false);
+                await file.CopyToAsync(fileStream);
+                await fileStream.FlushAsync();//streami bosalt
+            }
+
+            return Ok();
         }
 
     }

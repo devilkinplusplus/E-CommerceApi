@@ -23439,3 +23439,2235 @@ Server: Kestrel
 Access-Control-Allow-Origin: [Redacted]
 Vary: [Redacted]
 2023-03-04 17:40:21.241 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 2725.9943ms
+2023-03-04 21:33:28.748 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 21:33:29.098 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 21:33:29.100 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 21:33:29.102 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 21:33:29.103 +04:00 [INF] Hosting environment: Development
+2023-03-04 21:33:29.105 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 21:33:37.585 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:33:37.585 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:33:37.743 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:33:37.743 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:33:37.753 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:33:37.756 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:33:37.815 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:33:37.817 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:33:37.842 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 261.2830ms
+2023-03-04 21:33:37.893 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:33:40.568 +04:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:33:40.603 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:33:40.664 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:33:40.665 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:33:40.707 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:33:40.731 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 2829.1039ms
+2023-03-04 21:33:40.734 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:33:40.737 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:33:40 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:33:40.751 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 3172.0093ms
+2023-03-04 21:33:47.189 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:33:47.194 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:33:47.196 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:33:47.200 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:33:47.203 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 14.0039ms
+2023-03-04 21:33:47.213 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarykc8Kk1SIoZE8syVi 139545
+2023-03-04 21:33:47.215 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarykc8Kk1SIoZE8syVi
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 139545
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:33:47.218 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:33:47.221 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:33:47.223 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:33:47.226 +04:00 [INF] Response:
+StatusCode: 405
+Allow: DELETE, GET
+2023-03-04 21:33:47.227 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarykc8Kk1SIoZE8syVi 139545 - 405 0 - 14.6591ms
+2023-03-04 21:35:11.895 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 21:35:12.675 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 21:35:13.068 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 21:35:13.539 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 21:35:13.541 +04:00 [INF] Hosting environment: Development
+2023-03-04 21:35:13.543 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 21:35:20.839 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:35:20.979 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:35:20.985 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:35:20.993 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:35:21.008 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 171.0925ms
+2023-03-04 21:35:21.057 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryA4APSopVUXfbodue 139545
+2023-03-04 21:35:21.067 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryA4APSopVUXfbodue
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 139545
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:35:21.069 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:35:21.121 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:35:21.124 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:35:21.128 +04:00 [INF] Response:
+StatusCode: 405
+Allow: DELETE, GET
+2023-03-04 21:35:21.132 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryA4APSopVUXfbodue 139545 - 405 0 - 75.6633ms
+2023-03-04 21:35:36.717 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:35:36.746 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:35:36.748 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:35:36.751 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:35:36.753 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 36.4158ms
+2023-03-04 21:35:37.029 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:35:37.033 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:35:37.035 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:35:37.037 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:35:37.176 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:35:40.576 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:35:40.615 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:35:40.689 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:35:40.691 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:35:40.774 +04:00 [INF] Executed DbCommand (52ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:35:40.810 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 3622.365ms
+2023-03-04 21:35:40.812 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:35:40.814 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:35:40 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:35:40.829 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 3800.6603ms
+2023-03-04 21:35:49.229 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:35:49.232 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:35:49.234 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:35:49.237 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:35:49.239 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 9.5666ms
+2023-03-04 21:35:49.244 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryAsKvo2sz1Ba0tao7 489493
+2023-03-04 21:35:49.247 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAsKvo2sz1Ba0tao7
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 489493
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:35:49.251 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:35:49.255 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:35:49.261 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:35:49.263 +04:00 [INF] Response:
+StatusCode: 405
+Allow: DELETE, GET
+2023-03-04 21:35:49.265 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryAsKvo2sz1Ba0tao7 489493 - 405 0 - 21.1431ms
+2023-03-04 21:37:31.794 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 21:37:32.320 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 21:37:32.331 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 21:37:32.335 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 21:37:32.337 +04:00 [INF] Hosting environment: Development
+2023-03-04 21:37:32.340 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 21:37:36.378 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:37:36.433 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:37:36.626 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:37:36.626 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:37:36.637 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:37:36.637 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:37:36.703 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:37:36.704 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:37:36.722 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 346.6570ms
+2023-03-04 21:37:36.773 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:37:39.505 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:37:39.562 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:37:39.661 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:37:39.675 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:37:39.779 +04:00 [INF] Executed DbCommand (43ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:37:39.816 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 3030.9529ms
+2023-03-04 21:37:39.823 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:37:39.828 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:37:39 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:37:39.863 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 3430.2586ms
+2023-03-04 21:37:49.858 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:37:49.865 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:37:49.872 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:37:49.878 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:37:49.880 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 21.9998ms
+2023-03-04 21:37:49.899 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarybvVgVRxPeMrKzw1H 18192
+2023-03-04 21:37:49.903 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarybvVgVRxPeMrKzw1H
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 18192
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:37:49.906 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:37:49.911 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:37:49.914 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:37:49.918 +04:00 [INF] Response:
+StatusCode: 405
+Allow: DELETE, GET
+2023-03-04 21:37:49.920 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarybvVgVRxPeMrKzw1H 18192 - 405 0 - 20.7907ms
+2023-03-04 21:38:27.045 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:38:27.050 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:38:27.052 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:38:27.054 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:38:27.055 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 10.0744ms
+2023-03-04 21:38:27.340 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:38:27.349 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:38:27.353 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:38:27.356 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:38:27.366 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:38:27.638 +04:00 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:38:27.645 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:38:27.664 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:38:27.670 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 299.2581ms
+2023-03-04 21:38:27.676 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:38:27.679 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:38:26 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:38:27.683 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 342.7390ms
+2023-03-04 21:38:43.013 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:38:43.015 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:38:43.018 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:38:43.020 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:38:43.022 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 8.6351ms
+2023-03-04 21:38:43.340 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:38:43.374 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:38:43.380 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:38:43.396 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:38:43.403 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:38:43.467 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:38:43.475 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:38:43.488 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:38:43.496 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 76.1217ms
+2023-03-04 21:38:43.507 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:38:43.511 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:38:42 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:38:43.513 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 173.6167ms
+2023-03-04 21:38:55.752 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:38:55.759 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:38:55.767 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:38:55.770 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:38:55.773 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 20.6063ms
+2023-03-04 21:38:56.089 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:38:56.092 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:38:56.095 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:38:56.098 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:38:56.099 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:38:56.114 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:38:56.119 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:38:56.131 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:38:56.136 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 31.5277ms
+2023-03-04 21:38:56.139 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:38:56.141 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:38:55 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:38:56.143 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 54.0804ms
+2023-03-04 21:39:00.062 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:39:00.065 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:39:00.069 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:39:00.071 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:39:00.073 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 10.4570ms
+2023-03-04 21:39:00.077 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryWwYRRQwXm3atuH6c 448196
+2023-03-04 21:39:00.080 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryWwYRRQwXm3atuH6c
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 448196
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:39:00.084 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:39:00.086 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:39:00.088 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-03-04 21:39:00.090 +04:00 [INF] Response:
+StatusCode: 405
+Allow: DELETE, GET
+2023-03-04 21:39:00.092 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryWwYRRQwXm3atuH6c 448196 - 405 0 - 15.4432ms
+2023-03-04 21:39:00.104 +04:00 [INF] Connection id "0HMOSQSIB3JM7", Request id "0HMOSQSIB3JM7:00000007": the application completed without reading the entire request body.
+2023-03-04 21:48:03.452 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 21:48:04.099 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 21:48:04.103 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 21:48:04.107 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 21:48:04.109 +04:00 [INF] Hosting environment: Development
+2023-03-04 21:48:04.110 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 21:48:34.032 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:48:34.032 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:48:34.354 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:48:34.354 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:48:34.375 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:48:34.375 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:48:34.443 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:48:34.445 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:48:34.482 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 449.5830ms
+2023-03-04 21:48:34.558 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:48:37.885 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:48:37.930 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:48:38.011 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:48:38.014 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 21:48:38.094 +04:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:48:38.131 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 3541.5035ms
+2023-03-04 21:48:38.138 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:48:38.165 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:48:37 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:48:38.190 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 4164.1204ms
+2023-03-04 21:48:40.664 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:48:40.667 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:48:40.669 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:48:40.673 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:48:40.674 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 10.2556ms
+2023-03-04 21:48:40.680 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryGiWI3Wc0bKjmxBeT 89799
+2023-03-04 21:48:40.682 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryGiWI3Wc0bKjmxBeT
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 89799
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:48:40.685 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:48:40.688 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 21:48:40.704 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:48:40.762 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]'.
+2023-03-04 21:48:40.784 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 77.0447ms
+2023-03-04 21:48:40.787 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 21:48:40.790 +04:00 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:48:40 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:48:40.804 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryGiWI3Wc0bKjmxBeT 89799 - 400 - application/json;+charset=utf-8 124.4256ms
+2023-03-04 21:48:49.290 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products/upload - -
+2023-03-04 21:48:49.318 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:48:49.320 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:48:49.333 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.Guid) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:48:49.342 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]'.
+2023-03-04 21:48:49.357 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 21.3959ms
+2023-03-04 21:48:49.359 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:48:49.361 +04:00 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2023-03-04 21:48:49.372 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products/upload - - - 400 - application/json;+charset=utf-8 81.3708ms
+2023-03-04 21:48:49.562 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/favicon.ico - -
+2023-03-04 21:48:49.564 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:48:49.584 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:48:49.586 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/favicon.ico - - - 404 0 - 23.7789ms
+2023-03-04 21:49:17.795 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 21:49:17.797 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:49:17.799 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:49:17.800 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 21:49:17.802 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 6.8987ms
+2023-03-04 21:49:18.015 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 21:49:18.027 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:49:18.029 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:49:18.038 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:49:18.047 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:49:18.222 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 21:49:18.232 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 21:49:18.360 +04:00 [INF] Executed DbCommand (66ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 21:49:18.363 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 269.0103ms
+2023-03-04 21:49:18.365 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 21:49:18.366 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:49:17 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:49:18.369 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 354.9129ms
+2023-03-04 21:49:24.539 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 21:49:24.541 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:49:24.542 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:49:24.544 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:49:24.546 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 6.7805ms
+2023-03-04 21:49:24.550 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryQesBXpyPpsWsLPfH 18192
+2023-03-04 21:49:24.552 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryQesBXpyPpsWsLPfH
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 18192
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 21:49:24.557 +04:00 [INF] CORS policy execution successful.
+2023-03-04 21:49:24.561 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 21:49:24.565 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 21:49:24.579 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]'.
+2023-03-04 21:49:24.581 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 9.1502ms
+2023-03-04 21:49:24.586 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 21:49:24.590 +04:00 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 17:49:23 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 21:49:24.592 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryQesBXpyPpsWsLPfH 18192 - 400 - application/json;+charset=utf-8 42.1559ms
+2023-03-04 22:12:33.606 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:12:34.478 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:12:34.493 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:12:34.496 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:12:34.580 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:12:34.581 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:12:35.374 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 22:12:35.374 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 22:12:35.628 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:12:35.629 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:12:35.664 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:12:35.667 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:12:35.781 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 22:12:35.784 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 22:12:35.872 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 457.3342ms
+2023-03-04 22:12:35.922 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:12:38.765 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 22:12:38.796 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 22:12:38.875 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 22:12:38.877 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 22:12:38.936 +04:00 [INF] Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 22:12:38.961 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 3014.8596ms
+2023-03-04 22:12:38.964 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 22:12:38.966 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 18:12:38 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:12:38.987 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 3621.1531ms
+2023-03-04 22:12:45.222 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:12:45.226 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:12:45.228 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:12:45.232 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:12:45.235 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 12.6482ms
+2023-03-04 22:12:45.257 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryhWvAMzJgF9G5zf5G 489493
+2023-03-04 22:12:45.272 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryhWvAMzJgF9G5zf5G
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 489493
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:12:45.274 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:12:45.277 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:12:45.295 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:12:52.403 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 7104.6471ms
+2023-03-04 22:12:52.409 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:12:52.422 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.InvalidDataException: Multipart body length limit 16384 exceeded.
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.UpdatePosition(Int32 read)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:12:52.530 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryhWvAMzJgF9G5zf5G 489493 - 500 - text/plain;+charset=utf-8 7272.5202ms
+2023-03-04 22:13:37.451 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:13:37.968 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:13:37.970 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:13:37.974 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:13:37.975 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:13:37.977 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:13:56.651 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:13:56.811 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:13:56.820 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:13:56.826 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:13:56.880 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 191.0033ms
+2023-03-04 22:13:56.918 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundary4ee0W1BFFVxoCF55 18192
+2023-03-04 22:13:56.931 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary4ee0W1BFFVxoCF55
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 18192
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:13:56.934 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:13:56.991 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:13:57.034 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:14:10.811 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 13767.6343ms
+2023-03-04 22:14:10.821 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:14:10.843 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\wwwroot\uploads\productImages\df94d053-bc02-48c0-8c7a-000cb04706ac.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:14:10.973 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundary4ee0W1BFFVxoCF55 18192 - 500 - text/plain;+charset=utf-8 14055.3591ms
+2023-03-04 22:14:44.603 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:14:45.082 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:14:45.090 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:14:45.093 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:14:45.095 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:14:45.097 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:15:09.488 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:15:09.608 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:15:09.620 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:15:09.636 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:15:09.652 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 165.3198ms
+2023-03-04 22:15:09.701 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryBqc479v4qJs2LgAG 60685
+2023-03-04 22:15:09.710 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBqc479v4qJs2LgAG
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 60685
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:15:09.714 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:15:09.768 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:15:09.811 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:15:37.928 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 28109.6307ms
+2023-03-04 22:15:37.937 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:15:37.953 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\wwwroot\uploads\productImages\3c7fd204-d18d-47f3-b6aa-b854f672038a.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:15:38.073 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryBqc479v4qJs2LgAG 60685 - 500 - text/plain;+charset=utf-8 28372.0765ms
+2023-03-04 22:16:15.543 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:16:15.942 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:16:15.954 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:16:15.960 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:16:15.961 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:16:15.963 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:16:23.944 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:16:24.098 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:16:24.106 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:16:24.112 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:16:24.125 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 183.9542ms
+2023-03-04 22:16:24.163 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryAvSG9s7sXwpNvTFv 18192
+2023-03-04 22:16:24.175 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAvSG9s7sXwpNvTFv
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 18192
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:16:24.178 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:16:24.239 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:16:24.283 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:16:48.438 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 24146.2823ms
+2023-03-04 22:16:48.448 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:16:48.470 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\wwwroot\uploads\productImages\7cbf72be-e775-4815-a083-2966f29e4000.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:16:48.619 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryAvSG9s7sXwpNvTFv 18192 - 500 - text/plain;+charset=utf-8 24456.2968ms
+2023-03-04 22:22:49.984 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:22:50.560 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:22:50.562 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:22:50.565 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:22:50.566 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:22:50.568 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:22:50.984 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:22:51.107 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:22:51.113 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:22:51.118 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:22:51.128 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 145.9487ms
+2023-03-04 22:22:51.158 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryDIF0jJBF8Ijxw8oB 139545
+2023-03-04 22:22:51.165 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryDIF0jJBF8Ijxw8oB
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 139545
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:22:51.168 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:22:51.199 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:22:51.234 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:23:02.711 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 11470.3271ms
+2023-03-04 22:23:02.720 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:23:02.736 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.InvalidDataException: Multipart body length limit 16384 exceeded.
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.UpdatePosition(Int32 read)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:23:02.841 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryDIF0jJBF8Ijxw8oB 139545 - 500 - text/plain;+charset=utf-8 11683.4274ms
+2023-03-04 22:23:16.103 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:23:16.601 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:23:16.603 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:23:16.607 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:23:16.608 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:23:16.610 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:23:34.505 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:23:34.577 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:23:34.582 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:23:34.587 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:23:34.604 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 99.7043ms
+2023-03-04 22:23:34.615 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarySCBCRCGV9wfaJcnS 23471
+2023-03-04 22:23:34.621 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarySCBCRCGV9wfaJcnS
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 23471
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:23:34.623 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:23:34.654 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:23:34.683 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:24:09.713 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:24:10.159 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:24:10.161 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:24:10.164 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:24:10.166 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:24:10.167 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:24:29.079 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:24:29.199 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:24:29.210 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:24:29.216 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:24:29.244 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 151.2858ms
+2023-03-04 22:24:29.268 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryWJKpKx8BAIpyc9UV 60685
+2023-03-04 22:24:29.295 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryWJKpKx8BAIpyc9UV
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 60685
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:24:29.298 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:24:29.342 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:24:29.388 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:24:39.027 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 9632.3768ms
+2023-03-04 22:24:39.035 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:24:39.051 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\wwwroot\uploads\productImages\.png'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 96
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:24:39.154 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryWJKpKx8BAIpyc9UV 60685 - 500 - text/plain;+charset=utf-8 9886.2766ms
+2023-03-04 22:25:17.216 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:25:17.611 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:25:17.614 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:25:17.618 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:25:17.621 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:25:17.622 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:25:22.295 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:25:22.379 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:25:22.384 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:25:22.388 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:25:22.396 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 102.9780ms
+2023-03-04 22:25:22.420 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryBLA05cCcArL1UEMk 89799
+2023-03-04 22:25:22.426 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBLA05cCcArL1UEMk
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 89799
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:25:22.428 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:25:22.459 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:25:22.494 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:25:28.561 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 6059.1627ms
+2023-03-04 22:25:28.570 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:25:28.589 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.InvalidDataException: Multipart body length limit 16384 exceeded.
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.UpdatePosition(Int32 read)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:25:28.703 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryBLA05cCcArL1UEMk 89799 - 500 - text/plain;+charset=utf-8 6282.9836ms
+2023-03-04 22:25:42.525 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:25:43.029 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:25:43.034 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:25:43.038 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:25:43.040 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:25:43.041 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:25:52.662 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:25:52.769 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:25:52.775 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:25:52.779 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:25:52.792 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 130.5987ms
+2023-03-04 22:25:52.829 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryOLjhWPaAqzgYmRPI 489493
+2023-03-04 22:25:52.836 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryOLjhWPaAqzgYmRPI
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 489493
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:25:52.838 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:25:52.889 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:25:52.947 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:25:58.340 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 5380.7017ms
+2023-03-04 22:25:58.349 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:25:58.366 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.InvalidDataException: Multipart body length limit 16384 exceeded.
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.UpdatePosition(Int32 read)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:25:58.452 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryOLjhWPaAqzgYmRPI 489493 - 500 - text/plain;+charset=utf-8 5623.8385ms
+2023-03-04 22:26:12.145 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:26:12.585 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:26:12.587 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:26:12.592 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:26:12.595 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:26:12.605 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:26:21.665 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - -
+2023-03-04 22:26:21.663 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - -
+2023-03-04 22:26:21.803 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:26:21.803 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Categories/GetCategories
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:26:21.811 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:26:21.811 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:26:21.869 +04:00 [INF] Response:
+StatusCode: 404
+2023-03-04 22:26:21.869 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 22:26:21.891 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/Categories/GetCategories - - - 404 0 - 231.2138ms
+2023-03-04 22:26:21.968 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(ShopApi.Application.RequestParameters.Pagination) on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:26:24.732 +04:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2023-03-04 22:26:24.761 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Linq.IQueryable`1[[<>f__AnonymousType0`5[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Single, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], ShopApi.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-03-04 22:26:24.823 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 22:26:24.825 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-03-04 22:26:24.868 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Title], [p].[Price], [p].[Stock], [p].[Date]
+FROM [Products] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-03-04 22:26:24.888 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI) in 2914.1602ms
+2023-03-04 22:26:24.890 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Get (ShopApi.UI)'
+2023-03-04 22:26:24.893 +04:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 04 Mar 2023 18:26:24 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:26:24.903 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7162/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 3238.3601ms
+2023-03-04 22:26:27.371 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:26:27.374 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:26:27.375 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:26:27.379 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:26:27.381 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 9.5839ms
+2023-03-04 22:26:27.387 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryAPBDba2T96ytI5EY 89799
+2023-03-04 22:26:27.390 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAPBDba2T96ytI5EY
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 89799
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:26:27.393 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:26:27.396 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:26:27.408 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:26:31.604 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 4193.6688ms
+2023-03-04 22:26:31.611 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:26:31.629 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.InvalidDataException: Multipart body length limit 16384 exceeded.
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.UpdatePosition(Int32 read)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:26:31.695 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundaryAPBDba2T96ytI5EY 89799 - 500 - text/plain;+charset=utf-8 4307.5935ms
+2023-03-04 22:29:06.908 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:29:07.455 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:29:07.457 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:29:07.461 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:29:07.463 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:29:07.464 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:29:07.789 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:29:07.919 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:29:07.925 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:29:07.929 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:29:07.937 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 150.9355ms
+2023-03-04 22:29:07.969 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundary1QAl5tiqnyBZCz1X 601296
+2023-03-04 22:29:07.979 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary1QAl5tiqnyBZCz1X
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 601296
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:29:07.983 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:29:08.025 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:29:08.066 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:29:14.720 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 6646.4905ms
+2023-03-04 22:29:14.731 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:29:14.751 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.InvalidDataException: Multipart body length limit 16384 exceeded.
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.UpdatePosition(Int32 read)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReaderStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.MultipartReader.ReadNextSectionAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at ShopApi.UI.Controllers.ProductsController.Upload() in C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\Controllers\ProductsController.cs:line 92
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-04 22:29:14.888 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundary1QAl5tiqnyBZCz1X 601296 - 500 - text/plain;+charset=utf-8 6919.9138ms
+2023-03-04 22:29:55.745 +04:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-04 22:29:56.106 +04:00 [INF] Now listening on: https://localhost:7162
+2023-03-04 22:29:56.108 +04:00 [INF] Now listening on: http://localhost:5023
+2023-03-04 22:29:56.111 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-04 22:29:56.113 +04:00 [INF] Hosting environment: Development
+2023-03-04 22:29:56.115 +04:00 [INF] Content root path: C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI
+2023-03-04 22:29:56.437 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7162/api/products/upload - -
+2023-03-04 22:29:56.528 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,tr;q=0.8
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:29:56.533 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:29:56.537 +04:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2023-03-04 22:29:56.547 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7162/api/products/upload - - - 204 - - 110.5932ms
+2023-03-04 22:29:56.572 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarybxDjHj3Bbb9yXAEu 13643
+2023-03-04 22:29:56.579 +04:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/products/upload
+Accept: application/json, text/plain, */*
+Host: localhost:7162
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarybxDjHj3Bbb9yXAEu
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 13643
+sec-ch-ua: [Redacted]
+responsetype: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-gpc: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2023-03-04 22:29:56.581 +04:00 [INF] CORS policy execution successful.
+2023-03-04 22:29:56.621 +04:00 [INF] Executing endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:29:56.661 +04:00 [INF] Route matched with {action = "Upload", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload() on controller ShopApi.UI.Controllers.ProductsController (ShopApi.UI).
+2023-03-04 22:30:13.001 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-03-04 22:30:13.058 +04:00 [INF] Executed action ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI) in 16385.7928ms
+2023-03-04 22:30:13.065 +04:00 [INF] Executed endpoint 'ShopApi.UI.Controllers.ProductsController.Upload (ShopApi.UI)'
+2023-03-04 22:30:13.073 +04:00 [INF] Response:
+StatusCode: 200
+2023-03-04 22:30:13.089 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7162/api/products/upload multipart/form-data;+boundary=----WebKitFormBoundarybxDjHj3Bbb9yXAEu 13643 - 200 0 - 16517.5737ms
