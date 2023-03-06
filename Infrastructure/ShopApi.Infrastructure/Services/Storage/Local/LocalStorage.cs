@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ShopApi.Infrastructure.Services.Storage.Local
 {
-    public class LocalStorage : ILocalStorage
+    public class LocalStorage : Storage, ILocalStorage
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
 
@@ -39,7 +39,7 @@ namespace ShopApi.Infrastructure.Services.Storage.Local
             List<(string fileName, string path)> data = new();
             foreach (IFormFile file in files)
             {
-                string newFileName = await FileRenameAsync(path, file.FileName);
+                string newFileName = await FileRenameAsync(path, file.FileName, HasFile);
                 string fullPath = Path.Combine(uploadPath, newFileName);
 
                 await CopyFileAsync(fullPath, file);
@@ -50,23 +50,6 @@ namespace ShopApi.Infrastructure.Services.Storage.Local
         }
 
 
-        private async Task<string> FileRenameAsync(string path, string fileName)
-        {
-            string newFileName = await Task.Run<string>(async () =>
-            {
-                string extension = Path.GetExtension(fileName);
-                string oldName = Path.GetFileNameWithoutExtension(fileName);
-                DateTime datetimenow = DateTime.UtcNow;
-                string datetimeutcnow = datetimenow.ToString("yyyyMMddHHmmss");
-                string newFileName = $"{datetimeutcnow}{NameOperation.CharacterRegulatory(oldName)}{extension}";
-
-                if (File.Exists($"{path}\\{newFileName}"))
-                    return await FileRenameAsync(path, newFileName);
-                else
-                    return newFileName;
-            });
-            return newFileName;
-        }
 
 
         private async Task<bool> CopyFileAsync(string path, IFormFile file)

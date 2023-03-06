@@ -92,16 +92,16 @@ namespace ShopApi.UI.Controllers
         public async Task<IActionResult> Upload()
         {
             //await _fileService.UploadAsync("uploads/productImages", Request.Form.Files);
-            var fileData = await _storageService.UploadAsync("uploads/productImages", Request.Form.Files);
+            var fileData = await _storageService.UploadAsync("productimages", Request.Form.Files);
 
-            //await _productImageWrite.AddRangeAsync(fileData.Select(x => new ProductImageFile()
-            //{
-            //    FileName = x.fileName,
-            //    FilePath = x.pathOrContainerName,
-            //    Storage = _storageService.StorageName
-            //}).ToList());
+            await _productImageWrite.AddRangeAsync(fileData.Select(x => new ProductImageFile()
+            {
+                FileName = x.fileName,
+                FilePath = x.pathOrContainerName,
+                Storage = _storageService.StorageName
+            }).ToList());
 
-            //await _productImageWrite.SaveAsync();
+            await _productImageWrite.SaveAsync();
             return Ok();
         }
 

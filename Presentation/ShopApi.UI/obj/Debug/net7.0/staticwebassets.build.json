@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a8k+Fkmy72deDCILMMDArvToiMlP5RQY7yyiP9/EqlY=",
+  "Hash": "WC/UAiXoBbYNWRSyqKpkEt47xgidbis+G0xlgNbcaeY=",
   "Source": "ShopApi.UI",
   "BasePath": "_content/ShopApi.UI",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\2023030610320817-fener.jpg",
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103445blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
       "SourceId": "ShopApi.UI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
       "BasePath": "_content/ShopApi.UI",
-      "RelativePath": "uploads/productImages/2023030610320817-fener.jpg",
+      "RelativePath": "uploads/productImages/20230306103445blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,15 +31,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\2023030610320817-fener.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103208blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103445fusionlightbluewindows11logomicrosoftminimalistoperatingsystem4khdwindows11-3840x2160.jpg",
       "SourceId": "ShopApi.UI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
       "BasePath": "_content/ShopApi.UI",
-      "RelativePath": "uploads/productImages/20230306103208blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
+      "RelativePath": "uploads/productImages/20230306103445fusionlightbluewindows11logomicrosoftminimalistoperatingsystem4khdwindows11-3840x2160.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48,15 +48,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103208blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445fusionlightbluewindows11logomicrosoftminimalistoperatingsystem4khdwindows11-3840x2160.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103208fener.jpg",
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg",
       "SourceId": "ShopApi.UI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
       "BasePath": "_content/ShopApi.UI",
-      "RelativePath": "uploads/productImages/20230306103208fener.jpg",
+      "RelativePath": "uploads/productImages/20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103208fener.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg"
     }
   ]
 }
