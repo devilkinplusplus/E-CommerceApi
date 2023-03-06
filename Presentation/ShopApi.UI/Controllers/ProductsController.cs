@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShopApi.Application.Abstractions.Services;
+using ShopApi.Application.Abstractions.Storage;
 using ShopApi.Application.Repositories;
 using ShopApi.Application.RequestParameters;
 using ShopApi.Application.ViewModels;
@@ -16,12 +18,14 @@ namespace ShopApi.UI.Controllers
     {
         private readonly IProductWriteRepository _productWrite;
         private readonly IProductReadRepository _productRead;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite, IWebHostEnvironment webHostEnvironment)
+        private readonly IStorageService _storageService;
+        private readonly IProductImageWriteRepository _productImageWrite;
+        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite, IStorageService storageService, IProductImageWriteRepository productImageWrite)
         {
             _productRead = productRead;
             _productWrite = productWrite;
-            _webHostEnvironment = webHostEnvironment;
+            _storageService = storageService;
+            _productImageWrite = productImageWrite;
         }
 
         [HttpGet]
@@ -87,18 +91,17 @@ namespace ShopApi.UI.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload()
         {
-            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads/productImages");
+            //await _fileService.UploadAsync("uploads/productImages", Request.Form.Files);
+            var fileData = await _storageService.UploadAsync("uploads/productImages", Request.Form.Files);
 
-            foreach (IFormFile file in Request.Form.Files)
-            {
-                string fullPath = Path.Combine(uploadPath, $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}");
+            //await _productImageWrite.AddRangeAsync(fileData.Select(x => new ProductImageFile()
+            //{
+            //    FileName = x.fileName,
+            //    FilePath = x.pathOrContainerName,
+            //    Storage = _storageService.StorageName
+            //}).ToList());
 
-                using FileStream fileStream = new(fullPath, FileMode.Create, FileAccess.Write, FileShare.None,
-                        1024 * 1024, false);
-                await file.CopyToAsync(fileStream);
-                await fileStream.FlushAsync();//streami bosalt
-            }
-
+            //await _productImageWrite.SaveAsync();
             return Ok();
         }
 

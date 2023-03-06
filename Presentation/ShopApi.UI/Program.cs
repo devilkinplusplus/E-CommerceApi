@@ -14,6 +14,7 @@ using FluentValidation.AspNetCore;
 using ShopApi.Application.Validators;
 using ShopApi.Application.Validators.Products;
 using ShopApi.Infrastructure.Filters;
+using ShopApi.Infrastructure.Services.Storage.Local;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,8 @@ builder.Services.AddPersistanceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddAplicationServices();
 
+//select storage for files
+builder.Services.AddStorage<LocalStorage>();
 
 builder.Services.AddControllers(opt => opt.Filters.Add<ValidationFilter>())
     .AddFluentValidation(con => con.RegisterValidatorsFromAssemblyContaining<ProductCreateValidator>())

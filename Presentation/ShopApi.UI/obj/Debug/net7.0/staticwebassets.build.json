@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HQghFZdnxkk/d//1jqlRsZgn5vPGp0BcGZtNjJF5aio=",
+  "Hash": "a8k+Fkmy72deDCILMMDArvToiMlP5RQY7yyiP9/EqlY=",
   "Source": "ShopApi.UI",
   "BasePath": "_content/ShopApi.UI",
   "Mode": "Default",
@@ -15,5 +15,57 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\2023030610320817-fener.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/2023030610320817-fener.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\2023030610320817-fener.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103208blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/20230306103208blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103208blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103208fener.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/20230306103208fener.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103208fener.jpg"
+    }
+  ]
 }
