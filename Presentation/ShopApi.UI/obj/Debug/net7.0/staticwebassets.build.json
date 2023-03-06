@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HQghFZdnxkk/d//1jqlRsZgn5vPGp0BcGZtNjJF5aio=",
+  "Hash": "WC/UAiXoBbYNWRSyqKpkEt47xgidbis+G0xlgNbcaeY=",
   "Source": "ShopApi.UI",
   "BasePath": "_content/ShopApi.UI",
   "Mode": "Default",
@@ -15,5 +15,57 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103445blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/20230306103445blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445blackballwithwhitestripesonfloor4khdblack-3840x2160.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103445fusionlightbluewindows11logomicrosoftminimalistoperatingsystem4khdwindows11-3840x2160.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/20230306103445fusionlightbluewindows11logomicrosoftminimalistoperatingsystem4khdwindows11-3840x2160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445fusionlightbluewindows11logomicrosoftminimalistoperatingsystem4khdwindows11-3840x2160.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg"
+    }
+  ]
 }

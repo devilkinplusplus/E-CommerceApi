@@ -111,3 +111,6 @@ C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\Seri
 C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\Serilog.Sinks.File.dll
 C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Users\user\source\repos\ShopApi\Presentation\ShopApi.UI\bin\Debug\net7.0\System.IO.Hashing.dll
