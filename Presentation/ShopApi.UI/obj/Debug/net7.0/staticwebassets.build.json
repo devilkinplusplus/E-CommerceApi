@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WC/UAiXoBbYNWRSyqKpkEt47xgidbis+G0xlgNbcaeY=",
+  "Hash": "QSpPpJFhX7n2+9R+4QhJSc8WY1mpEu7WAzc6DsHkFko=",
   "Source": "ShopApi.UI",
   "BasePath": "_content/ShopApi.UI",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230308105216closeupviewtrailmosspathtreesforestnaturebackground4khdnature-3840x2160.jpg",
+      "SourceId": "ShopApi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\",
+      "BasePath": "_content/ShopApi.UI",
+      "RelativePath": "uploads/productImages/20230308105216closeupviewtrailmosspathtreesforestnaturebackground4khdnature-3840x2160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\productImages\\20230308105216closeupviewtrailmosspathtreesforestnaturebackground4khdnature-3840x2160.jpg"
     }
   ]
 }

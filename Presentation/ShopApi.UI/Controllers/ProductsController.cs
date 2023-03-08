@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShopApi.Application.Abstractions.Services;
 using ShopApi.Application.Abstractions.Storage;
 using ShopApi.Application.Repositories;
@@ -20,12 +21,14 @@ namespace ShopApi.UI.Controllers
         private readonly IProductReadRepository _productRead;
         private readonly IStorageService _storageService;
         private readonly IProductImageWriteRepository _productImageWrite;
-        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite, IStorageService storageService, IProductImageWriteRepository productImageWrite)
+        private readonly IConfiguration _configuration;
+        public ProductsController(IProductReadRepository productRead, IProductWriteRepository productWrite, IStorageService storageService, IProductImageWriteRepository productImageWrite, IConfiguration configuration)
         {
             _productRead = productRead;
             _productWrite = productWrite;
             _storageService = storageService;
             _productImageWrite = productImageWrite;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -88,22 +91,52 @@ namespace ShopApi.UI.Controllers
             return NoContent();
         }
 
-        [HttpPost("[action]")]
-        public async Task<IActionResult> Upload()
+        [HttpPost("[action]")]//id burda bildirilmedise queryStringden gelecek demekdir
+        public async Task<IActionResult> Upload(string id)
         {
             //await _fileService.UploadAsync("uploads/productImages", Request.Form.Files);
             var fileData = await _storageService.UploadAsync("productimages", Request.Form.Files);
+
+           Product prod =  await _productRead.GetByIdAsync(Guid.Parse(id));
 
             await _productImageWrite.AddRangeAsync(fileData.Select(x => new ProductImageFile()
             {
                 FileName = x.fileName,
                 FilePath = x.pathOrContainerName,
-                Storage = _storageService.StorageName
+                Storage = _storageService.StorageName,
+                Products = new List<Product>() { prod }
             }).ToList());
 
             await _productImageWrite.SaveAsync();
             return Ok();
         }
 
+        [HttpGet("[action]/{id}")] //id bildirildise rootdan gelecek demekdir
+        public async Task<IActionResult> GetImages(string id)
+        {
+            Product? product = await _productRead.Table.Include(x => x.ProductImageFiles)
+                                    .FirstOrDefaultAsync(x => x.Id == Guid.Parse(id));
+
+            return Ok(product?.ProductImageFiles.Select(x => new
+            {
+                Id = x.Id,
+                Path = $"{_configuration["BaseStorageUrl"]}/{x.FilePath}",
+                Name = x.FileName
+            }));
+        }
+
+        [HttpDelete("[action]/{id}")] 
+        public async Task<IActionResult> DeleteImage(string id,string imageId)
+        {
+            Product? product = await _productRead.Table.Include(x => x.ProductImageFiles)
+                                    .FirstOrDefaultAsync(x => x.Id == Guid.Parse(id));
+
+            ProductImageFile? file = product?.ProductImageFiles.FirstOrDefault(x => x.Id == Guid.Parse(imageId));
+
+            product.ProductImageFiles.Remove(file);
+            await _productWrite.SaveAsync();
+
+            return Ok();
+        }
     }
 }

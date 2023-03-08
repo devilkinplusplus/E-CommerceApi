@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ShopApi.Infrastructure.Services.Storage.Azure
 {
-    public class AzureStorage :Storage, IAzureStorage
+    public class AzureStorage : Storage, IAzureStorage
     {
         private readonly BlobServiceClient _blobServiceClient; //azure accountuna bağlanmaq üçün 
         private BlobContainerClient _blobContainerClient; //azure containerində fayl əməliyyatları üçün
@@ -36,7 +36,7 @@ namespace ShopApi.Infrastructure.Services.Storage.Azure
         public bool HasFile(string container, string fileName)
         {
             _blobContainerClient = _blobServiceClient.GetBlobContainerClient(container);
-            return _blobContainerClient.GetBlobs().Any(x=>x.Name == fileName);
+            return _blobContainerClient.GetBlobs().Any(x => x.Name == fileName);
         }
 
         public async Task<List<(string fileName, string pathOrContainerName)>> UploadAsync(string container, IFormFileCollection files)
@@ -49,10 +49,10 @@ namespace ShopApi.Infrastructure.Services.Storage.Azure
 
             foreach (IFormFile file in files)
             {
-                string newFileName = await FileRenameAsync(container, file.Name,HasFile);
+                string newFileName = await FileRenameAsync(container, file.Name, HasFile);
                 BlobClient blobClient = _blobContainerClient.GetBlobClient(newFileName);
                 await blobClient.UploadAsync(file.OpenReadStream());
-                data.Add((file.Name, container));
+                data.Add((newFileName, $"{container}/{newFileName}"));
             }
             return data;
 
