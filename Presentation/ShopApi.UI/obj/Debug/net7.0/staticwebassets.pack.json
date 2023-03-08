@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\uploads\\productImages\\20230306103445ios15stockdarkmodeipados15wwdc21hdrhdios15.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\ShopApi\\Presentation\\ShopApi.UI\\wwwroot\\uploads\\productImages\\20230308105216closeupviewtrailmosspathtreesforestnaturebackground4khdnature-3840x2160.jpg",
+      "PackagePath": "staticwebassets\\uploads\\productImages\\20230308105216closeupviewtrailmosspathtreesforestnaturebackground4khdnature-3840x2160.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ShopApi.UI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
